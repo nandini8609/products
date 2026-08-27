@@ -1,10 +1,12 @@
+from database import get_inventory_value
 from database import (
     create_table,
     add_product,
     get_products,
     search_products,
     update_product,
-    delete_product
+    delete_product,
+    get_inventory_value
 )
 
 
@@ -34,6 +36,7 @@ def main():
         print("4. Update Product")
         print("5. Delete Product")
         print("6. Exit")
+        print("7. Total Inventory valu")
 
         choice = input("Enter your choice: ")
 
@@ -92,10 +95,14 @@ def main():
 
         elif choice == "6":
             print("Thank you!")
-            break
 
         else:
             print("Invalid choice. Please select 1-6.")
+            
+        elif choice == "7":
+           total = get_inventory_value()
+           print(f"Total Inventory Value: ₹{total:.2f}")
+           break
 
 
 if __name__ == "__main__":
