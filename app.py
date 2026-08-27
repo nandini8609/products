@@ -1,4 +1,3 @@
-from database import get_inventory_value
 from database import (
     create_table,
     add_product,
