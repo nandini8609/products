@@ -5,7 +5,8 @@ from database import (
     search_products,
     update_product,
     delete_product,
-    get_inventory_value )
+    get_inventory_value 
+)
 
 
 def show_products(products):
@@ -34,7 +35,7 @@ def main():
         print("4. Update Product")
         print("5. Delete Product")
         print("6. Exit")
-        print("7. Total Inventory valu")
+        print("7. Total inventory valu")
 
         choice = input("Enter your choice: ")
 
