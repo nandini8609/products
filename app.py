@@ -5,8 +5,7 @@ from database import (
     search_products,
     update_product,
     delete_product,
-    get_inventory_value
-)
+    get_inventory_value )
 
 
 def show_products(products):
