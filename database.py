@@ -98,3 +98,18 @@ def delete_product(product_id):
     conn.close()
 
     return deleted
+
+def get_inventory_value():
+    conn = connect_db()
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        SELECT SUM(price * quantity)
+        FROM products
+    """)
+
+    result = cursor.fetchone()[0]
+
+    conn.close()
+
+    return result or 0
