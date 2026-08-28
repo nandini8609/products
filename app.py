@@ -96,8 +96,6 @@ def main():
             print("Thank you!")
             break
 
-        else:
-            print("Invalid choice. Please select 1-6.")
             
         elif choice == "7":
            total = get_inventory_value()
