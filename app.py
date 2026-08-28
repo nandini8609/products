@@ -94,15 +94,18 @@ def main():
 
         elif choice == "6":
             print("Thank you!")
+            break
 
         else:
             print("Invalid choice. Please select 1-6.")
             
         elif choice == "7":
            total = get_inventory_value()
-        else:
            print(f"Total Inventory Value: ₹{total:.2f}")
            break
+        else:
+            print("Invalid choice. please select 1-7.")
+
 
 
 if __name__ == "__main__":
