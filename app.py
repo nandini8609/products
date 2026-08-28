@@ -1,4 +1,4 @@
-from database import (
+from database import ( 
     create_table,
     add_product,
     get_products,
