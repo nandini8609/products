@@ -100,6 +100,7 @@ def main():
             
         elif choice == "7":
            total = get_inventory_value()
+        else:
            print(f"Total Inventory Value: ₹{total:.2f}")
            break
 
